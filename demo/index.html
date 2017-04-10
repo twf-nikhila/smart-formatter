@@ -1,0 +1,54 @@
+<html>
+    
+    <head>
+        <title>Demo of Smart-Formatter</title>
+        
+        <script type="text/javascript" src="../lib/jquery-3.2.0.min.js"></script>
+        
+        <script type="text/javascript" src="../src/smart-formatter.js"></script>
+        
+        <script type="text/javascript">
+            $(function(){
+                
+                $('#my-test-form').smart_format();
+               
+            });
+        </script>
+        
+    </head>
+    
+    <body>
+        <form id="my-test-form">
+            <fieldset>
+                <legend>Input fields with different formatting options used</legend>
+                
+                Name Prefix: <input type="text" name="nameprefix" sf="uc select-all" placeholder="Uppercase and Select all">
+                <br><br>
+                
+                First name: <input type="text" name="firstname" sf="ucfirst" placeholder="Uppercase first only">
+                <br><br>
+                
+                Last name: <input type="text" name="lastname" sf="ucfirst" placeholder="Uppercase first only">
+                <br><br>
+                
+                Company: <input type="text" name="company" sf="ucfirst" placeholder="Uppercase first only">
+                <br><br>
+                
+                Your Message: <textarea sf="sc select-all" placeholder="Sentence case - Auto capitalize words after '.(Full Stop)', '! (Exclamation)', '? (Question mark)' and Select all" rows=4 cols=80></textarea>
+                <br><br>
+                
+                Numbers of staffs: <input type="text" name="company" sf="numbers" placeholder="Accepts only number">
+                <br><br>
+                
+                Turnover: <input type="text" name="budget" sf="money" placeholder="Money format">
+                <br><br>
+                
+                Registration number: <input type="text" name="registrationNumber" sf="lc" placeholder="Lowercase">
+                <br><br>
+                
+            </fieldset>
+            
+        </form>
+    </body>
+    
+</html>
